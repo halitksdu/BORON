@@ -5,7 +5,7 @@ module Round_enc(
     
     
     wire [63:0] S1,S2;
-    Add_round_key     f1(state_in,round_key[63:0],S1);  //ilk şifre 0
+    Add_round_key     f1(state_in,round_key[63:0],S1);  //ilk Ã¾ifre 0
     S_Box_Layer       f2(S1,S2);
     Permutation_Layer f3(S2,state_out);
     

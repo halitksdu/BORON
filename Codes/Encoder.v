@@ -22,7 +22,7 @@ module Encoder(
   always @(posedge clk) begin
     if(reset == 0) begin
       state <= IDLE;
-      counter <= 5'd0; // 24 bit eleman alýcaz
+      counter <= 5'd0; // 24 bit eleman alÃ½caz
     
     end else begin
       case (state) 
